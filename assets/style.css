@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #071315;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1000;
+}
+
+.navbar a{
+    margin-left: 30px;
+    text-decoration: none;
+}
+
+.container-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-image, .bg-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-image {
+    pointer-events: none;
+    user-select: none;
+    overflow: hidden;
+}
+
+.bg-image img {
+    object-fit: cover;
+}
+
+.container-main .content-text {
+    position: relative;
+    z-index: 100;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    flex-direction: column;
+}
+
+.container-main .content-text a{
+    text-decoration: none;
+}
+
+.container-main .content-text .main-text {
+    font-size: 24px;
+    padding: 80px;
+}
+
+.container-main .content-text .heading {
+    font-size: 26px;
+}
