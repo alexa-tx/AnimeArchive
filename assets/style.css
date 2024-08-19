@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-} */
-
-
 *{
     font-family: 'Montserrat';
     margin: 0;
@@ -34,6 +24,19 @@
 .navbar a{
     margin-left: 30px;
     text-decoration: none;
+}
+
+.navbar button {
+    background-color: #42AAC0;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 30px;
+}
+
+.navbar button:hover {
+    background-color: #9EDEDF;
 }
 
 .container-main {
@@ -71,10 +74,6 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
-    /* letter-spacing: 0.15em;
-    animation: typing 4s steps(30, end);
-    overflow: hidden;
-    white-space: nowrap; */
 }
 
 .container-main .content-text a{
@@ -107,9 +106,16 @@
     width: 512px;
     height: 213px;
     padding: 20px;
-    background-color: #42AAC0;
+    background-color: #8E79FF;
     box-sizing: border-box; 
     border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s;
+}
+
+.anime:hover, .character:hover, .anime-new:hover, .manga:hover {
+    background-color: #DD7FE1;
 }
 
 .anime .text, .character .text, .anime-new .text, .manga .text {
@@ -135,4 +141,31 @@
     width: auto; 
     height: 213px;
     object-fit: contain;
+}
+
+.footer {
+    margin-top: 4%;
+    background-color: #C09EDF;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    white-space: nowrap;
+}
+
+.social-link i {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.social-link a {
+    text-decoration: none;
+    margin-top: 10px;
 }
